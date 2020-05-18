@@ -19,6 +19,7 @@
 
 Parquet MR [![Build Status](https://travis-ci.org/apache/parquet-mr.svg?branch=master)](http://travis-ci.org/apache/parquet-mr)
 ======
+apache-parquet-1.9.0
 
 Parquet-MR contains the java implementation of the [Parquet format](https://github.com/apache/parquet-format). 
 Parquet is a columnar storage format for Hadoop; it provides efficient storage and encoding of data.
