@@ -29,6 +29,9 @@ before_install:
   - sudo make install
   - cd ..
 
+jdk:
+  - openjdk8
+  
 env:
   - HADOOP_PROFILE=hadoop-1 TEST_CODECS=uncompressed
   - HADOOP_PROFILE=default TEST_CODECS=gzip,snappy
