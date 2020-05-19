@@ -20,10 +20,10 @@ before_install:
   - cd thrift-0.7.0
   - chmod +x ./configure
   - ./configure --disable-gen-erl --disable-gen-hs --without-ruby --without-haskell --without-erlang
-  - sudo mvn install:install-file -DgroupId=org.apache.httpcomponents -DartifactId=httpclient -Dversion=4.0.1 -Dpackaging=jar -Dfile=./httpclient-4.0.1.jar
-  - sudo mvn install:install-file -DgroupId=org.slf4j -DartifactId=slf4j-api -Dversion=1.5.8 -Dpackaging=jar -Dfile=./slf4j-api-1.5.8.jar
-  - sudo mvn install:install-file -DgroupId=javax.servlet -DartifactId=servlet-api -Dversion=2.5 -Dpackaging=jar -Dfile=./servlet-api-2.5.jar
-  - sudo mvn install:install-file -DgroupId=commons-lang -DartifactId=commons-lang -Dversion=2.5 -Dpackaging=jar -Dfile=./commons-lang-2.5.jar
+  - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=org.apache.httpcomponents -DartifactId=httpclient -Dversion=4.0.1 -Dpackaging=jar -Dfile=./httpclient-4.0.1.jar
+  - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=org.slf4j -DartifactId=slf4j-api -Dversion=1.5.8 -Dpackaging=jar -Dfile=./slf4j-api-1.5.8.jar
+  - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=javax.servlet -DartifactId=servlet-api -Dversion=2.5 -Dpackaging=jar -Dfile=./servlet-api-2.5.jar
+  - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=commons-lang -DartifactId=commons-lang -Dversion=2.5 -Dpackaging=jar -Dfile=./commons-lang-2.5.jar
   - sudo make install
   - cd ..
 
