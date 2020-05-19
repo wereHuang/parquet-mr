@@ -24,6 +24,8 @@ before_install:
   - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=org.slf4j -DartifactId=slf4j-api -Dversion=1.5.8 -Dpackaging=jar -Dfile=./slf4j-api-1.5.8.jar
   - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=javax.servlet -DartifactId=servlet-api -Dversion=2.5 -Dpackaging=jar -Dfile=./servlet-api-2.5.jar
   - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=commons-lang -DartifactId=commons-lang -Dversion=2.5 -Dpackaging=jar -Dfile=./commons-lang-2.5.jar
+  - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=org.slf4j -DartifactId=slf4j-log4j12 -Dversion=1.5.8 -Dpackaging=jar -Dfile=./slf4j-log4j12-1.5.8.jar
+  - sudo /usr/local/maven/bin/mvn install:install-file -DgroupId=junit -DartifactId=junit -Dversion=4.4 -Dpackaging=jar -Dfile=./junit-4.4.jar
   - sudo make install
   - cd ..
 
